@@ -212,6 +212,7 @@ def notifications():
 
 
 @bp.route('/rechnen/', methods=['POST'])
+@login_required
 def rechnen():
 
     error = None
